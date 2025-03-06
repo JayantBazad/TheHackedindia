@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #0a0a0a;
+    color: white;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(0, 255, 255, 0.3);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: cyan;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover, .active {
+    color: cyan;
+}
+
+/* Hero Section */
+.about-hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #000428, #004e92);
+    margin-bottom: 40px;
+    color: cyan;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.about-hero h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.about-hero p {
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+/* About Content */
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 10%;
+}
+
+.about-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    border-radius: 15px;
+    width: 45%;
+    text-align: center;
+    border: 2px solid cyan;
+    transition: 0.3s ease-in-out;
+    position: relative;
+}
+
+.about-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0, 255, 255, 0.6);
+}
+
+.about-box h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: cyan;
+}
+
+.founder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.founder img {
+    width: 150px;
+    border-radius: 50%;
+    border: 2px solid cyan;
+}
+
+.founder-text {
+    font-size: 16px;
+}
+
+.founder-text h3 {
+    color: cyan;
+    font-size: 22px;
+}
+
+.founder-text p {
+    margin-top: 5px;
+    opacity: 0.8;
+}
+
+.about-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-box ul li {
+    font-size: 18px;
+    margin: 10px 0;
+    color: cyan;
+    position: relative;
+    padding-left: 30px;
+}
+
+.about-box ul li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: lime;
+    font-size: 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    background: rgba(0, 0, 0, 0.8);
+}
